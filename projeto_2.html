@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<script>
+	
+function pulaLinha() {
+
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+alert("Quero ver voce acertar a senha");
+alert("A resposta da senha é 20*20*20*20+30+32+8");
+
+var resposta = 20*20*20*20+30+32+8;
+
+var chute = prompt("Qual é a resposta");
+
+if (chute == resposta) {
+
+    mostra("<center><h1>Você acertou!!!</h1>");
+    mostra("<h2>Sua recompensa é...</h2>");
+    alert(".");
+    alert("..");
+    alert("...");
+    mostra("<h1><big><big>NADA</big></big></h1>");
+
+}
+else {
+    alert(".");
+    alert("..");
+    alert("...");
+    mostra("<h1><big><center>Você errou</big></h1>");
+}
+
+</script>
